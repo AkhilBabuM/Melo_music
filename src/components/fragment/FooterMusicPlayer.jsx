@@ -10,13 +10,30 @@ function FooterMusicPlayer({ music }) {
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(1);
-  console.log(music);
+  const [songDetails, setSongDetails] = useState(null);
+  
+  useEffect(() => {
+    fetch("http://localhost:3001/music")
+      .then((response) => response.json())
+      .then((data) => {
+        const filteredMusic = data.filter((song) => song.uploadmusicuri === music.musicUri);
+        if (filteredMusic.length > 0) {
+          setSongDetails(filteredMusic[0]);
+        } else {
+          console.log(`Song with musicUri "${music.musicUri}" not found.`);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching music:", error);
+      });
+  }, [music]);
 
   useEffect(() => {
     const audioElement = audioRef.current;
     audioElement.addEventListener("canplaythrough", () => {
       setDuration(audioElement.duration);
     });
+
     const updateTime = () => {
       setCurrentTime(audioElement.currentTime);
     };
@@ -24,7 +41,6 @@ function FooterMusicPlayer({ music }) {
     return () => {
       audioElement.removeEventListener("canplaythrough", updateTime);
       audioElement.removeEventListener("timeupdate", updateTime);
-      audioElement.pause();
     };
   }, []);
 
@@ -32,10 +48,11 @@ function FooterMusicPlayer({ music }) {
     const audioElement = audioRef.current;
     if (audioElement.paused) {
       audioElement.play();
+      setPlaying(true);
     } else {
       audioElement.pause();
+      setPlaying(false);
     }
-    setPlaying(!audioElement.paused);
   };
 
   const handleVolumeChange = (e) => {
@@ -55,8 +72,8 @@ function FooterMusicPlayer({ music }) {
     <>
       <div className="music-progress-bar">
         <input
-          className='musicprogressbarstyle'
-          style={{width:'100%'}}
+          className="musicprogressbarstyle"
+          style={{ width: "100%" }}
           type="range"
           min="0"
           max={duration}
@@ -71,10 +88,7 @@ function FooterMusicPlayer({ music }) {
       </div>
       <div className="footer-music-player">
         <div className="music-details">
-          <div className="music-info">
-            <h4 className="music-title">{music.title}</h4>
-            <p className="music-artist">{music.artist}</p>
-          </div>
+         
           <div className="music-controls">
             <Button
               variant="contained"
@@ -90,15 +104,17 @@ function FooterMusicPlayer({ music }) {
             </Button>
           </div>
         </div>
-        
+        <div className="music-info">
+            {songDetails && <h3>{songDetails.name}</h3>}
+            {songDetails && <h4>{songDetails.musicproducer}</h4>}
+            </div>
         <div className="playback-widgets">
           <div className="timer">
             <p>
-              <span>{formatTime(currentTime)}</span> /{" "}
-              <span>{formatTime(duration)}</span>
+              <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
             </p>
           </div>
-          <div >
+          <div>
             <input
               className="volume-control"
               type="range"
@@ -110,7 +126,7 @@ function FooterMusicPlayer({ music }) {
             />
           </div>
         </div>
-        <audio ref={audioRef} src={music.musicUri} />
+        <audio ref={audioRef} src={songDetails && songDetails.uploadmusicuri} />
       </div>
     </>
   );

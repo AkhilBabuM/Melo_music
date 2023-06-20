@@ -49,7 +49,7 @@ function MusicCard({ music }) {
             </div>
           </div>
           <Name name={music.name} className="song-name" length={(music.name ?? '').length} />
-          <Name name={music.author_name ?? ''} className="author-name" length={(music.author_name ?? '').length} />
+          <Name name={music.musicproducer ?? ''} className="author-name" length={(music.musicproducer ?? '').length} />
         </React.Fragment>
       )}
     </div>
