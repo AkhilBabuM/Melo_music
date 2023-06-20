@@ -39,5 +39,10 @@ In a separate terminal execute:\
 `npx hardhat run ./scripts/aideploy.js --network localhost`\
 `npx hardhat run ./scripts/marketplacedeploy.js --network localhost`
 
+### 5. Run node server
+`node server.js`
+
+
 ### 6. Start frontend
+In a separate terminal execute:\
 `$ npm run start`

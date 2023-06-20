@@ -15,10 +15,8 @@
     "axios": "0.27.2",
     "bootstrap": "^5.2.3",
     "buffer": "^6.0.3",
-    "cors": "^2.8.5",
     "dotenv": "8.2.0",
-    "express": "^4.18.2",
-    "fs": "^0.0.1-security",
+    "ethers": "^5.7.2",
     "grade-js": "1.0.10",
     "hardhat": "^2.15.0",
     "nft.storage": "^7.0.0",
@@ -61,8 +59,6 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    "hardhat": "^2.13.1",
-    "@nomiclabs/hardhat-ethers": "^2.1.2",
-    "json-loader": "^0.5.7"
+    "hardhat": "^2.13.1"
   }
 }
