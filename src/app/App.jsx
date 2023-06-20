@@ -6,7 +6,6 @@ import Mint from "../components/Pages/Mint";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Login from "../components/Pages/Login";
 import {ThemeContext, themes} from "../api/Theme";
-import musicDB from "../db/music";
 import {useDispatch, useSelector} from "react-redux";
 
 import MarketplaceAbi from '../components/contractsData/Marketplace.json'

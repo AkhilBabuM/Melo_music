@@ -9,7 +9,6 @@ import MusicCardContainer from "../fragment/MusicCardContainer";
 import { useSelector } from "react-redux";
 import { ThemeContext } from "../../api/Theme";
 import Profile from "./Profile";
-import AddMusic from "../fragment/AddMusic";
 import FooterSelectMusic from "../fragment/FooterSelectMusic";
 import CurrentPlayingLarge from "../fragment/CurrentPlayingLarge";
 import Search from "./Search";
@@ -35,8 +34,6 @@ function getCurrPage(pathName, marketplace, nft, account) {
       return <Search />;
     case "/home/profile":
       return <Profile marketplace={marketplace} nft={nft} account={account} />;
-    case "/home/add":
-      return <AddMusic />;
     case "/home/about":
       return <About />;
     case "/home/generator":

@@ -6,5 +6,13 @@
     "musicproducer": "Lupus Nocte",
     "type": "instrumental",
     "id": 24
+  },
+  {
+    "uploadimageuri": "https://ipfs.io/ipfs/bafybeiavjov4mauegmmfrcnx6ymllojzeimzfpqhckjgnsjotrxtpbc2jy/download.jpeg",
+    "uploadmusicuri": "https://ipfs.io/ipfs/bafybeia6fa7jdqpap6y6xrmsluetpu72t4r7owio6zjivlktiaovyrjomu/Heat Waves.mp3",
+    "name": "Heatwaves",
+    "musicproducer": "Post Malone",
+    "type": "instrumental",
+    "id": 25
   }
 ]
