@@ -1,4 +1,4 @@
-web3int
+web3musicint
 
 <h1 align="center">
    MELO | Decentralized Music
