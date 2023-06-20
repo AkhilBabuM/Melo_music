@@ -37,7 +37,8 @@ web3musicint
 ### 4. Run deployment script
 In a separate terminal execute:\
 `npx hardhat run ./scripts/aideploy.js --network localhost`\
-`npx hardhat run ./scripts/marketplacedeploy.js --network localhost`
+`npx hardhat run ./scripts/marketplacedeploy.js --network localhost`\
+`npx hardhat run ./scripts/musicdeploy.js --network localhost`
 
 ### 5. Run node server
 `node server.js`

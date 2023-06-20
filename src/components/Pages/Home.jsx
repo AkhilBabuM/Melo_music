@@ -18,6 +18,7 @@ import Generator from "./Generator";
 import Purchase from "./Purchase";
 import Mint from "./Mint";
 import Playlist from "../fragment/Playlist";
+import Create from "./Create"
 import { Skeleton } from "@material-ui/lab";
 import { ethers } from "ethers";
 import MarketplaceAbi from "../contractsData/Marketplace.json";
@@ -44,6 +45,8 @@ function getCurrPage(pathName, marketplace, nft, account) {
       return <Purchase marketplace={marketplace} nft={nft} />;
     case "/home/mint":
       return <Mint marketplace={marketplace} nft={nft} />;
+    case "/home/create":
+        return <Create />;
     default:
       if (pathName.startsWith("/home/playlist/")) {
         return <Playlist />;

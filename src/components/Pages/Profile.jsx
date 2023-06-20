@@ -140,7 +140,7 @@ function Profile({ marketplace, nft, account }) {
                     </div>
                 </div>
                 <div className="bottom-profile">
-                    <div>
+                    {/*<div>
                         <h3>Most Played</h3>
                         <div className="most-played">
                             {
@@ -149,7 +149,7 @@ function Profile({ marketplace, nft, account }) {
                                 ))
                             }
                         </div>
-                    </div>
+                        </div>*/}
             <div>
             <h3 className="top-profile" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>My Purchases</h3>
             {purchases.length > 0 ?
