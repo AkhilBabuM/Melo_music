@@ -15,9 +15,10 @@ function SideBar() {
                 </p>
                 <SideBarOptions className={"lib-sub"} Icon={HomeOutlined} href={"/home"} title={"Home"} />
                 <SideBarOptions className={"lib-sub"} Icon={SearchOutlined} href={"/home/search"}  title={"Search"}/>
-                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/generator"}  title={"Generator"}/>
-                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/purchase"}  title={"Purchase"}/>
-                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/mint"}  title={"Mint"}/>
+                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/generator"}  title={"Album Art Generator"}/>
+                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/purchase"}  title={"NFT Shop"}/>
+                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/mint"}  title={"Create NFT"}/>
+                <SideBarOptions className={"lib-sub"} Icon={HowToVoteTwoTone} href={"/home/create"}  title={"Upload Music"}/>
                 
                 <SideBarOptions className={"lib-sub"} Icon={ExploreOutlined} href={"/home/about"}  title={"About"}/>
                 {/*<SideBarOptions className={"lib-sub"} Icon={SearchOutlined} href={"/create"} title={"Create"} />

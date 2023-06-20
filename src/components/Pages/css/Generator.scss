@@ -37,14 +37,12 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap");
 
 :root {
-  --clr-white: #FFFFFF;
+  --clr-white: #ffffff;
   --clr-black: #202020;
-  --clr-blue: #6C63FF;
+  --clr-blue: #6c63ff;
   --clr-blue-2: #4c46b6;
 }
 
@@ -64,35 +62,34 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0 25px
+  margin: 0 25px;
 }
 
-.aigenform input[type="text"], input[type="number"], input[type="file"] {
+.aigenform input[type="text"],
+input[type="number"],
+input[type="file"] {
   width: 450px;
   height: 50px;
   margin: 10px 0;
   padding: 10px;
-  color:rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
   background-color: transparent;
   background: rgba(0, 0, 0, 0.229);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 16px );
--webkit-backdrop-filter: blur( 16px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 4px;
 
-  font-size: 1.10em;
+  font-size: 1.1em;
 }
 form input[type="file"] {
-
   border: 1px solid rgb(126, 112, 255);
   border-radius: 4px;
-
 }
 
 form input[type="submit"] {
-
   width: 250px;
   height: 50px;
   margin: 10px 0;
@@ -102,13 +99,12 @@ form input[type="submit"] {
 
   background-color: rgb(203, 198, 255);
   font-family: "Play";
-  font-size: 1.10em;
+  font-size: 1.1em;
   font-weight: 400;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 16px );
--webkit-backdrop-filter: blur( 16px );
-border-radius: 10px;
-
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
 
   cursor: pointer;
   transition: all 250ms ease;
@@ -116,18 +112,18 @@ border-radius: 10px;
 
 form input[type="submit"]:hover {
   background-color: rgb(126, 112, 255);
-  color:white;
+  color: white;
 }
 
-.form-contain{
-  padding:20px;
+.form-contain {
+  padding: 20px;
   background: rgba(0, 0, 0, 0.229);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 16px );
-  -webkit-backdrop-filter: blur( 16px );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
 }
 /* ------------------------------------------------------ */
 /* -- IMAGE -- */
@@ -141,11 +137,11 @@ form input[type="submit"]:hover {
   height: 512px;
   margin: 0 25px;
   background: rgba(0, 0, 0, 0.229);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 16px );
--webkit-backdrop-filter: blur( 16px );
-border-radius: 10px;
-border: 5px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.18);
   border-radius: 4px;
 
   overflow: hidden;
@@ -174,4 +170,28 @@ p {
   justify-content: center;
   align-items: center;
 }
+.submit-btn {
+  width: 150px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
 
+  border: none;
+
+  background-color: rgb(203, 198, 255);
+  font-family: "Play";
+  font-size: 1.1em;
+  font-weight: 400;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.submit-btn:hover {
+  background-color: rgb(126, 112, 255);
+  color: white;
+}
