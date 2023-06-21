@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Button from "@material-ui/core/Button";
-import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
+import PlayCircleFilledIcon from "@material-ui/icons/PlayArrow";
+import PauseCircleFilledIcon from "@material-ui/icons/Pause";
 import "./FooterMusicPlayer.css";
 
 function FooterMusicPlayer({ music }) {
@@ -87,11 +87,14 @@ function FooterMusicPlayer({ music }) {
         />
       </div>
       <div className="footer-music-player">
-        <div className="music-details">
-         
+        <div className="music-info">
+            {songDetails && <h3>{songDetails.name}</h3>}
+            {songDetails && <h4>{songDetails.musicproducer}</h4>}
+        </div>
+        <div className="music-details"> 
           <div className="music-controls">
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               className="play-button"
               onClick={togglePlay}
@@ -104,10 +107,6 @@ function FooterMusicPlayer({ music }) {
             </Button>
           </div>
         </div>
-        <div className="music-info">
-            {songDetails && <h3>{songDetails.name}</h3>}
-            {songDetails && <h4>{songDetails.musicproducer}</h4>}
-            </div>
         <div className="playback-widgets">
           <div className="timer">
             <p>
