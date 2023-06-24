@@ -42,12 +42,15 @@
 .music-controls {
   display: flex;
   align-items: center;
+  font-size: 20px;
 }
 
 .play-button {
   min-width: 0;
   padding: 8px;
   margin-left: 10px;
+  color:white !important;
+  border: 1px solid white !important;
 }
 
 .play-icon {

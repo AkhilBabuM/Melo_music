@@ -97,7 +97,9 @@ function FooterMusicPlayer({ music }) {
               variant="outlined"
               color="primary"
               className="play-button"
+              size="large"
               onClick={togglePlay}
+
             >
               {playing ? (
                 <PauseCircleFilledIcon className="play-icon" />
