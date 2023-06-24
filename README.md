@@ -33,7 +33,6 @@ web3musicint
 ### 3. Start Hardhat node
 `$ npx hardhat node`
 
-
 ### 4. Run deployment script
 In a separate terminal execute:\
 `npx hardhat run ./scripts/aideploy.js --network localhost`\
@@ -42,7 +41,6 @@ In a separate terminal execute:\
 
 ### 5. Run node server
 `node server.js`
-
 
 ### 6. Start frontend
 In a separate terminal execute:\
