@@ -1,5 +1,3 @@
-web3musicint
-
 <h1 align="center">
    MELO | Decentralized Music
 </h1>
@@ -45,3 +43,6 @@ In a separate terminal execute:\
 ### 6. Start frontend
 In a separate terminal execute:\
 `$ npm run start`
+
+
+Web3MainMerged
