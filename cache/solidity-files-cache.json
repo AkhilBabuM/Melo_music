@@ -479,8 +479,8 @@
       ]
     },
     "C:\\Users\\akhil\\Documents\\AAActualDocs\\111Self Valar\\Full Stack\\6th Sem Mini Project\\Melo_music\\contracts\\Marketplace.sol": {
-      "lastModificationDate": 1686631156717,
-      "contentHash": "b44c8473fb21b9b7e4a0280e192f5026",
+      "lastModificationDate": 1689919720591,
+      "contentHash": "f62ee051df3ac45e9762efb7602cb994",
       "sourceName": "contracts/Marketplace.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -588,8 +588,8 @@
       ]
     },
     "C:\\Users\\akhil\\Documents\\AAActualDocs\\111Self Valar\\Full Stack\\6th Sem Mini Project\\Melo_music\\contracts\\NFT.sol": {
-      "lastModificationDate": 1686631156720,
-      "contentHash": "70165c5f53b9f8d5f8671b9d55310ff4",
+      "lastModificationDate": 1689919720592,
+      "contentHash": "1da1e8439f62c94acef6964469b6996d",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.17",

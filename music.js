@@ -36,7 +36,7 @@
     "uploadmusicuri": "https://ipfs.io/ipfs/bafybeiexsgr7kl7idvqofrup7c4ulobhzwvw3ecbdaqt5q6wrqcte4a3h4/Mozart Requiem.mp3",
     "name": "Requiem",
     "musicproducer": "Mozart",
-    "type": "",
+    "type": "instrumental",
     "id": 33
   },
   {
@@ -70,5 +70,13 @@
     "musicproducer": "Lupus Nocte ",
     "type": "electronic",
     "id": 40
+  },
+  {
+    "uploadimageuri": "https://ipfs.io/ipfs/bafybeifrwudttqsewaalehjs73scrbyrppfrtiy7iluzu2qe7zxe7362n4/melo icon.png",
+    "uploadmusicuri": "https://ipfs.io/ipfs/bafybeibn4wktit44zobltrzqn5xyisvlqsty46zcrmhyri3jsp45pqlkqq/Clarx Shakedown.mp3",
+    "name": "Shakedown",
+    "musicproducer": "Clarx",
+    "type": "electronic",
+    "id": 41
   }
 ]
